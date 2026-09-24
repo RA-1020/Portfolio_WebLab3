@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Rohaan Ahmad</title>
+  <meta name="description" content="Projects by Rohaan Ahmad: ScentMatch, a 3D racing game in Unity, Pawsense, Minty, a search engine built from scratch, an accounts management system, Syntra, and a self-hosted home server.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <div class="site-in">
+      <a class="brand" href="index.html">Rohaan Ahmad</a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Projects</h1>
+        <p class="lede">Two pieces of work I would show first, then everything else in short form.</p>
+      </div>
+
+      <!-- Inline CSS carries the per-project accent; the internal stylesheet reads it. -->
+      <article class="feature" style="--accent: #21918C">
+        <figure class="feature-shot photo" style="--photo-sat: 0.7; --photo-veil: 0.08; --photo-pos: 50% 34%">
+          <img src="images/scentmatch.jpg" width="1600" height="949" loading="lazy" alt="Screenshot of the ScentMatch fragrance dupe discovery platform.">
+        </figure>
+        <div>
+          <span class="feature-kind">Course project, CS220 Database Systems</span>
+          <h2>ScentMatch</h2>
+          <p>A fragrance dupe discovery platform that searches close to 70,000 fragrances. It ranks algorithmic dupes by weighted similarity across notes, accords, concentration and gender, and shows community-submitted dupes beside them with upvotes, downvotes and a side-by-side comparison.</p>
+          <p class="detail">An 18-table schema with row-level security across all of it, and similarity scoring done in stored procedures.</p>
+          <ul class="stack">
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>Supabase</li>
+            <li>PostgreSQL</li>
+            <li>Tailwind CSS</li>
+            <li>GSAP</li>
+          </ul>
+          <p class="links">
+            <span><span class="lbl">Live</span><a href="https://scent-match-eight.vercel.app">scent-match-eight.vercel.app</a></span>
+            <span><span class="lbl">Code</span><a href="https://github.com/RA-1020/ScentMatch">github.com/RA-1020/ScentMatch</a></span>
+          </p>
+        </div>
+      </article>
+
+      <!-- TODO: this is a reference image, not a frame from the build. Send a real screenshot
+           and one standout detail, or say the word and I will replace it with a CSS-drawn block. -->
+      <article class="feature feature-flip feature-racing" style="--accent: #5EC962">
+        <figure class="feature-shot photo" style="--photo-sat: 0.55; --photo-veil: 0.22">
+          <img src="images/racing.jpg" width="597" height="335" loading="lazy" alt="A third-person view of a racing game, with a car on a circuit and a speedometer.">
+        </figure>
+        <div>
+          <span class="feature-kind">Built during an internship</span>
+          <h2>3D racing game</h2>
+          <span class="track"><span class="car"></span></span>
+          <p>A racing game built in Unity with C#. Hands-on work with Unity's 3D physics, vehicle controls and real-time rendering.</p>
+          <ul class="stack">
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+        </div>
+      </article>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Everything else</h2>
+        </div>
+
+        <article class="row">
+          <h3>Pawsense <span class="chip">Team project</span></h3>
+          <div>
+            <p>An AI pet-behaviour dashboard. Upload a video of a pet and a YOLOv11 pose-detection pipeline together with a Groq language model reads posture and motion to score wellbeing, spot behaviours such as tail wagging, running and jumping, and write care recommendations. It also includes a vet finder.</p>
+            <p class="contribution"><strong>My contribution:</strong> I built the ML pipeline integration into the app.</p>
+            <p class="stackline">React, Express, FastAPI, YOLOv11, Groq, Supabase</p>
+            <p class="links">
+              <span><span class="lbl">Live</span><a href="https://pawsense-ruddy.vercel.app">pawsense-ruddy.vercel.app</a></span>
+              <span><span class="lbl">Code</span><a href="https://github.com/RA-1020/Pawsense">github.com/RA-1020/Pawsense</a></span>
+            </p>
+          </div>
+        </article>
+
+        <article class="row">
+          <h3>Minty</h3>
+          <div>
+            <p>A personal finance and budgeting dashboard: transaction tracking with smart categorisation, custom budgets with spend alerts, animated analytics including pie charts and monthly trends, and AI-generated spending insights through Groq.</p>
+            <p class="stackline">Next.js, React, TypeScript, Supabase, Tailwind CSS</p>
+            <p class="links">
+              <span><span class="lbl">Code</span><a href="https://github.com/RA-1020/Minty">github.com/RA-1020/Minty</a></span>
+            </p>
+          </div>
+        </article>
+
+        <article class="row">
+          <h3>Search engine</h3>
+          <div>
+            <p>A search engine built from scratch. Uploading a document triggers lexicon generation, then a forward index deduplicated into buckets by document ID, then a multithreaded inverted-index build in which the dataset is split, temporary indexes are built in parallel and then merged. Search runs against the inverted index. Loosely inspired by the original Google paper, <em>The Anatomy of a Large-Scale Hypertextual Web Search Engine</em>.</p>
+            <p class="stackline">Python backend, React frontend</p>
+            <p class="links">
+              <span><span class="lbl">Code</span><a href="https://github.com/RA-1020/Search_Engine_Articles">github.com/RA-1020/Search_Engine_Articles</a></span>
+            </p>
+          </div>
+        </article>
+
+        <article class="row">
+          <h3>ACM, an accounts management system</h3>
+          <div>
+            <p>A database-heavy accounts management system built for a business to fold into its day-to-day operations, with a polished, modern interface over a carefully designed relational schema.</p>
+            <!-- TODO: repository or live link for ACM, if there is one to share -->
+          </div>
+        </article>
+
+        <article class="row">
+          <h3>Syntra <span class="chip">Team project</span></h3>
+          <div>
+            <p>A group software engineering project: an AI-powered study planner.</p>
+            <p class="contribution"><strong>My contribution:</strong> competitive analysis, non-functional requirements, and use-case diagrams.</p>
+          </div>
+        </article>
+
+        <article class="row">
+          <h3>Self-hosted home server</h3>
+          <div>
+            <p>An old laptop running Zorin OS, sitting in the UAE and administered remotely over Tailscale and SSH. It is meant for hosting websites and home-network services.</p>
+            <p class="stackline">Zorin OS, Tailscale, SSH</p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot-in">
+      <a href="https://github.com/RA-1020">github.com/RA-1020</a>
+      <span>Built from scratch with HTML and CSS</span>
+      <small><time datetime="2026">2026</time></small>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Rohaan Ahmad</title>
+  <meta name="description" content="A photo gallery with a full-screen view built entirely in CSS, using the :target selector instead of JavaScript.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <div class="site-in">
+      <a class="brand" href="index.html">Rohaan Ahmad</a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Gallery</h1>
+        <p class="lede">Select any photograph to open it full screen. The overlay, and moving between photographs, is the <em>:target</em> selector doing the work, with no JavaScript involved.</p>
+      </div>
+
+      <!-- TODO: confirm the Lahore Marathon medal is yours to show, and tell me where the
+           moon, lightning and rain photographs were taken if you want the places named. -->
+      <section class="section" id="gallery">
+        <ul class="grid list-plain">
+          <li style="--span: 2">
+            <figure>
+              <a class="photo" href="#img-1" style="--ar: 16 / 9; --photo-sat: 0.85; --photo-veil: 0.08; --photo-pos: 50% 46%"><img src="images/gallery-1.jpg" width="1600" height="1200" loading="lazy" alt="A full moon behind broken cloud over the sea at night."></a>
+              <figcaption>A full moon burning through broken cloud, and its track laid out across the water.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a class="photo" href="#img-2" style="--ar: 3 / 4; --photo-sat: 0.8; --photo-veil: 0.2; --photo-pos: 50% 50%"><img src="images/gallery-3.jpg" width="1200" height="1600" loading="lazy" alt="Heavy rain falling on a tree and an empty paved terrace."></a>
+              <figcaption>Monsoon rain emptying onto a terrace, with nobody left sitting in it.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a class="photo" href="#img-3" style="--ar: 3 / 4; --photo-sat: 0.8; --photo-veil: 0.18; --photo-pos: 50% 50%"><img src="images/gallery-4.jpg" width="1200" height="1600" loading="lazy" alt="A gold finisher's medal from the Lahore Marathon held in one hand."></a>
+              <figcaption>A finisher's medal from the Lahore Marathon, 2026.</figcaption>
+            </figure>
+          </li>
+          <li style="--span: 2">
+            <figure>
+              <a class="photo" href="#img-4" style="--ar: 16 / 9; --photo-sat: 0.85; --photo-veil: 0.08; --photo-pos: 50% 38%"><img src="images/gallery-2.jpg" width="897" height="1600" loading="lazy" alt="Forked lightning spreading across a night sky above a lit outdoor seating area."></a>
+              <figcaption>Lightning forking across the whole sky, over string lights and empty tables.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a class="photo" href="#img-5" style="--ar: 3 / 4; --photo-sat: 0.85; --photo-veil: 0.08; --photo-pos: 50% 42%"><img src="images/gallery-5.jpg" width="1200" height="1600" loading="lazy" alt="The Eiffel Tower at dusk, blurred by movement."></a>
+              <figcaption>The Eiffel Tower at dusk, caught in motion.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a class="photo" href="#img-6" style="--ar: 3 / 4; --photo-sat: 0.85; --photo-veil: 0.08; --photo-pos: 50% 50%"><img src="images/gallery-6.jpg" width="1200" height="1600" loading="lazy" alt="An open engine bay showing a V8 engine with an aftermarket cone air filter."></a>
+              <figcaption>A V8 with an aftermarket intake on it, bonnet up in the workshop.</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="lightbox" id="img-1" aria-label="Photograph one, full screen">
+      <div class="lightbox-in">
+        <figure>
+          <img src="images/gallery-1.jpg" width="1600" height="1200" loading="lazy" alt="A full moon behind broken cloud over the sea at night.">
+          <figcaption>A full moon burning through broken cloud, and its track laid out across the water.</figcaption>
+        </figure>
+        <p class="lb-nav">
+          <a href="#img-6">Previous</a>
+          <a href="#img-2">Next</a>
+          <a class="lb-close" href="#gallery">Close</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="lightbox" id="img-2" aria-label="Photograph two, full screen">
+      <div class="lightbox-in">
+        <figure>
+          <img src="images/gallery-3.jpg" width="1200" height="1600" loading="lazy" alt="Heavy rain falling on a tree and an empty paved terrace.">
+          <figcaption>Monsoon rain emptying onto a terrace, with nobody left sitting in it.</figcaption>
+        </figure>
+        <p class="lb-nav">
+          <a href="#img-1">Previous</a>
+          <a href="#img-3">Next</a>
+          <a class="lb-close" href="#gallery">Close</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="lightbox" id="img-3" aria-label="Photograph three, full screen">
+      <div class="lightbox-in">
+        <figure>
+          <img src="images/gallery-4.jpg" width="1200" height="1600" loading="lazy" alt="A gold finisher's medal from the Lahore Marathon held in one hand.">
+          <figcaption>A finisher's medal from the Lahore Marathon, 2026.</figcaption>
+        </figure>
+        <p class="lb-nav">
+          <a href="#img-2">Previous</a>
+          <a href="#img-4">Next</a>
+          <a class="lb-close" href="#gallery">Close</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="lightbox" id="img-4" aria-label="Photograph four, full screen">
+      <div class="lightbox-in">
+        <figure>
+          <img src="images/gallery-2.jpg" width="897" height="1600" loading="lazy" alt="Forked lightning spreading across a night sky above a lit outdoor seating area.">
+          <figcaption>Lightning forking across the whole sky, over string lights and empty tables.</figcaption>
+        </figure>
+        <p class="lb-nav">
+          <a href="#img-3">Previous</a>
+          <a href="#img-5">Next</a>
+          <a class="lb-close" href="#gallery">Close</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="lightbox" id="img-5" aria-label="Photograph five, full screen">
+      <div class="lightbox-in">
+        <figure>
+          <img src="images/gallery-5.jpg" width="1200" height="1600" loading="lazy" alt="The Eiffel Tower at dusk, blurred by movement.">
+          <figcaption>The Eiffel Tower at dusk, caught in motion.</figcaption>
+        </figure>
+        <p class="lb-nav">
+          <a href="#img-4">Previous</a>
+          <a href="#img-6">Next</a>
+          <a class="lb-close" href="#gallery">Close</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="lightbox" id="img-6" aria-label="Photograph six, full screen">
+      <div class="lightbox-in">
+        <figure>
+          <img src="images/gallery-6.jpg" width="1200" height="1600" loading="lazy" alt="An open engine bay showing a V8 engine with an aftermarket cone air filter.">
+          <figcaption>A V8 with an aftermarket intake on it, bonnet up in the workshop.</figcaption>
+        </figure>
+        <p class="lb-nav">
+          <a href="#img-5">Previous</a>
+          <a href="#img-1">Next</a>
+          <a class="lb-close" href="#gallery">Close</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot-in">
+      <a href="https://github.com/RA-1020">github.com/RA-1020</a>
+      <span>Built from scratch with HTML and CSS</span>
+      <small><time datetime="2026">2026</time></small>
+    </div>
+  </footer>
+</body>
+</html>

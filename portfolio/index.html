@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rohaan Ahmad — software engineering student</title>
+  <meta name="description" content="Rohaan Ahmad, software engineering student at NUST SEECS. I build full-stack products and games, and research privacy in federated learning for next-generation wireless networks.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <div class="site-in">
+      <a class="brand" href="index.html">Rohaan Ahmad</a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <!-- object-position keeps the face in frame as the crop changes with the viewport -->
+      <figure class="hero-photo photo" style="--photo-sat: 0.5; --photo-veil: 0.22; --photo-pos: 50% 34%">
+        <img src="images/portrait.jpg" width="510" height="686" alt="Rohaan Ahmad, photographed at night.">
+      </figure>
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <ul class="rail list-plain">
+            <li>Islamabad, Pakistan</li>
+            <li>BS Software Engineering, NUST SEECS</li>
+            <li>IPT Lab</li>
+          </ul>
+          <h1>Rohaan<br>Ahmad</h1>
+          <p class="lede">I am a software engineering student at NUST SEECS in Islamabad. I build full-stack products and games, and I research privacy in federated learning for next-generation wireless networks.</p>
+          <p class="hero-links">
+            <a href="https://github.com/RA-1020">GitHub</a>
+            <a href="https://scent-match-eight.vercel.app">ScentMatch</a>
+            <a href="research.html">Research</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <a href="projects.html">All projects</a>
+        </div>
+        <div class="work">
+          <article style="--accent: #21918C">
+            <a href="projects.html">
+              <span class="shot photo" style="--photo-sat: 0.7; --photo-veil: 0.08; --photo-pos: 50% 34%">
+                <img src="images/scentmatch.jpg" width="1600" height="949" loading="lazy" alt="Screenshot of the ScentMatch fragrance dupe discovery platform.">
+              </span>
+              <h3>ScentMatch</h3>
+              <p>Close to 70,000 fragrances, with dupes ranked by weighted similarity across notes, accords and concentration.</p>
+            </a>
+          </article>
+          <article style="--accent: #5EC962">
+            <a href="projects.html">
+              <span class="shot photo" style="--photo-sat: 0.6; --photo-veil: 0.16">
+                <img src="images/racing.jpg" width="597" height="335" loading="lazy" alt="A third-person view of a racing game, with a car on a circuit and a speedometer.">
+              </span>
+              <h3>3D racing game</h3>
+              <p>Unity and C#, built during an internship. Vehicle physics, controls and real-time rendering.</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap band-gap">
+      <section class="section">
+        <div class="section-head">
+          <h2>Research</h2>
+        </div>
+        <p class="lede">At the IPT Lab I study what a shared machine-learning model gives away about the devices that trained it, using tiny vision transformers on radio spectrograms. <a href="research.html">How the work is structured</a>.</p>
+      </section>
+    </div>
+
+    <!-- Each tile opens that photograph in the gallery's CSS lightbox. -->
+    <section class="photostrip" aria-label="Photographs">
+      <a class="photo" href="gallery.html#img-1" style="--photo-sat: 0.9; --photo-veil: 0.08; --photo-pos: 50% 44%">
+        <img src="images/gallery-1.jpg" width="1600" height="1200" loading="lazy" alt="A full moon behind broken cloud over the sea at night.">
+      </a>
+      <a class="photo" href="gallery.html#img-4" style="--photo-sat: 0.9; --photo-veil: 0.08; --photo-pos: 50% 38%">
+        <img src="images/gallery-2.jpg" width="897" height="1600" loading="lazy" alt="Forked lightning spreading across a night sky.">
+      </a>
+      <a class="photo" href="gallery.html#img-3" style="--photo-sat: 0.9; --photo-veil: 0.08; --photo-pos: 50% 48%">
+        <img src="images/gallery-4.jpg" width="1200" height="1600" loading="lazy" alt="A gold finisher's medal from the Lahore Marathon held in one hand.">
+      </a>
+      <a class="photo" href="gallery.html#img-6" style="--photo-sat: 0.9; --photo-veil: 0.08; --photo-pos: 50% 46%">
+        <img src="images/gallery-6.jpg" width="1200" height="1600" loading="lazy" alt="An open engine bay showing a V8 with an aftermarket cone air filter.">
+      </a>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The rest</h2>
+        </div>
+        <ul class="list-plain index">
+          <li><a href="skills.html">Skills</a><span>Languages, web, machine learning, game development, systems, and spoken languages.</span></li>
+          <li><a href="hobbies.html">Hobbies</a><span>An aquarium, calisthenics and football, hardware, German, finance, CTFs.</span></li>
+          <li><a href="gallery.html">Gallery</a><span>Photographs, with a full-screen view that runs on CSS alone.</span></li>
+          <li><a href="contact.html">Contact</a><span>My GitHub, my email, and a short message form.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot-in">
+      <a href="https://github.com/RA-1020">github.com/RA-1020</a>
+      <span>Built from scratch with HTML and CSS</span>
+      <small><time datetime="2026">2026</time></small>
+    </div>
+  </footer>
+</body>
+</html>

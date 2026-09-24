@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Rohaan Ahmad</title>
+  <meta name="description" content="Undergraduate research at the IPT Lab, NUST, on privacy and security of federated learning for 6G wireless systems, using tiny vision transformers on radio spectrograms.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <div class="site-in">
+      <a class="brand" href="index.html">Rohaan Ahmad</a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html" aria-current="page">Research</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Research</h1>
+        <p class="lede">Privacy and security of federated learning for 6G wireless systems, including non-terrestrial networks.</p>
+      </div>
+
+      <section class="section">
+        <p>In federated learning, devices train a shared model without ever sending their raw data to a server. They send updates instead. My work asks what those updates can still reveal about the devices that produced them, and how a system can be built so that it leaks less.</p>
+        <p>The models I work with are tiny vision transformers, and the data they learn from is radio spectrograms.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>What a spectrogram is</h2>
+        </div>
+        <figure class="spectro-lead">
+          <span class="photo spectro-frame" style="--photo-sat: 0.36; --photo-veil: 0.24">
+            <img src="images/spectrogram.png" width="596" height="335" loading="lazy" alt="An abstract rendering of signal energy.">
+          </span>
+          <figcaption>A picture of how a signal's energy is spread across frequency as time passes. Time runs left to right, frequency runs bottom to top, and colour is the level at each point, keyed by the scale on the right. The bands that hold their position are signal; the mottled background is noise. The ones I work with are built the same way, from radio rather than audio.</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>How the work is structured</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <h3>Build a validated signal generator</h3>
+            <p>Produce spectrograms whose behaviour can be checked against what the physics says it should be, so that everything built on top rests on data worth trusting.</p>
+          </li>
+          <li>
+            <h3>Measure what shared updates reveal</h3>
+            <p>With the data settled, ask what the updates devices send back can tell an observer about the devices themselves.</p>
+          </li>
+          <li>
+            <h3>Test defences</h3>
+            <p>Bring in the techniques meant to limit that leakage, and see how they behave in this particular setting rather than in the abstract.</p>
+          </li>
+          <li>
+            <h3>Study outside eavesdroppers</h3>
+            <p>Move the observer off the server and onto the wireless channel itself, where the updates are in transit.</p>
+          </li>
+        </ol>
+        <p class="note">This work is unpublished, so this page describes the shape of it and nothing more.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Tools and topics</h2>
+        </div>
+        <ul class="topics">
+          <li>PyTorch</li>
+          <li>Opacus</li>
+          <li>NVIDIA Sionna</li>
+          <li>Differential privacy</li>
+          <li>Membership inference</li>
+          <li>Participation inference</li>
+          <li>Secure aggregation</li>
+          <li>Robust aggregation</li>
+        </ul>
+      </section>
+
+      <section class="section people">
+        <div class="section-head">
+          <h2>Where and with whom</h2>
+        </div>
+        <p>IPT Lab, NUST School of Electrical Engineering and Computer Science, Islamabad.</p>
+        <p>Supervised by Prof. Syed Ali Hassan, with day-to-day supervision from Dr. Ali Zeeshan.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot-in">
+      <a href="https://github.com/RA-1020">github.com/RA-1020</a>
+      <span>Built from scratch with HTML and CSS</span>
+      <small><time datetime="2026">2026</time></small>
+    </div>
+  </footer>
+</body>
+</html>
