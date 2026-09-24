@@ -1,4 +1,4 @@
-# Rohaan Ahmad — portfolio
+# Rohaan Ahmad portfolio
 
 A personal portfolio site for Rohaan Ahmad, a software engineering student at NUST SEECS. It has seven pages: home, projects, research, skills, hobbies, a photo gallery, and contact.
 
